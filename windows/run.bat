@@ -1,7 +1,7 @@
 @echo off
 echo.
 echo  ==========================================
-echo   NetGuard - Network Device Blocker
+echo   blknet - Network Device Blocker
 echo  ==========================================
 echo.
 echo  Launching PowerShell...

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""NetGuard — Network Device Blocker GUI"""
+"""blknet — Network Device Blocker GUI"""
 
 import subprocess
 import re
@@ -394,7 +394,7 @@ def status():
 
 
 if __name__ == "__main__":
-    print("NetGuard starting...")
+    print("blknet starting...")
 
     # Capture the device gateway first: routing table, then subnet-matched fallback
     gateway = detect_gateway()
@@ -404,7 +404,7 @@ if __name__ == "__main__":
         source = "subnet fallback"
     if not gateway:
         print("ERROR: no gateway detected on this device (tried ip route, then common defaults).")
-        print("Connect to a network first (check with: ip route), then run NetGuard again.")
+        print("Connect to a network first (check with: ip route), then run blknet again.")
         sys.exit(1)
     GATEWAY = gateway
 

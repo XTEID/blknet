@@ -1,4 +1,4 @@
-# NetGuard — Windows Installation Guide
+# blknet — Windows Installation Guide
 
 ## Quick Start
 
@@ -41,7 +41,7 @@ python app.py
 ## File Structure
 
 ```
-netguard/windows/
+blknet/windows/
 ├── app.py              # Main application (cross-platform)
 ├── run.ps1             # PowerShell launcher (auto-setup)
 ├── run.bat             # Batch launcher (double-click)
@@ -80,5 +80,5 @@ taskkill /PID <PID> /F
 ## Notes
 
 - Windows Defender may flag scapy ARP packets — allow if prompted
-- NetGuard must keep running to maintain blocks
+- blknet must keep running to maintain blocks
 - Closing the PowerShell window stops all blocking

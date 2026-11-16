@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-NetGuard — Network Device Blocker GUI (Cross-Platform)
+blknet — Network Device Blocker GUI (Cross-Platform)
 Works on Windows (PowerShell) and Linux (Kali NetHunter).
 
 Windows: uses scapy for scanning + ARP spoofing (no nmap/arpspoof needed)
@@ -606,7 +606,7 @@ def status():
 
 if __name__ == "__main__":
     print("=" * 50)
-    print("  NetGuard — Network Device Blocker")
+    print("  blknet — Network Device Blocker")
     print("=" * 50)
     print(f"  Platform : {'Windows' if IS_WINDOWS else 'Linux'}")
     print(f"  Interface: {get_interface() or 'auto'}")

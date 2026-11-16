@@ -1,4 +1,4 @@
-# NetGuard — PowerShell Launcher (Windows)
+# blknet — PowerShell Launcher (Windows)
 # Run as Administrator!
 # Usage: Right-click -> Run with PowerShell, or: powershell -ExecutionPolicy Bypass -File run.ps1
 
@@ -12,7 +12,7 @@ Set-Location $ScriptDir
 
 Write-Host ""
 Write-Host "==================================================" -ForegroundColor Cyan
-Write-Host "  NetGuard - Network Device Blocker" -ForegroundColor Cyan
+Write-Host "  blknet - Network Device Blocker" -ForegroundColor Cyan
 Write-Host "==================================================" -ForegroundColor Cyan
 
 # Check if running as Administrator
@@ -20,7 +20,7 @@ $isAdmin = ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIde
 if (-not $isAdmin) {
     Write-Host ""
     Write-Host "  [!] Not running as Administrator!" -ForegroundColor Red
-    Write-Host "  NetGuard needs Admin to send ARP packets." -ForegroundColor Yellow
+    Write-Host "  blknet needs Admin to send ARP packets." -ForegroundColor Yellow
     Write-Host "  Right-click -> Run as Administrator" -ForegroundColor Yellow
     Write-Host ""
     $retry = Read-Host "  Restart as Admin? (Y/n)"
@@ -118,7 +118,7 @@ if ($npcapInstalled) {
 
 # Start server
 Write-Host ""
-Write-Host "  [*] Starting NetGuard..." -ForegroundColor Yellow
+Write-Host "  [*] Starting blknet..." -ForegroundColor Yellow
 Write-Host "  [*] Open browser: http://127.0.0.1:$Port" -ForegroundColor Cyan
 Write-Host "  [*] Press Ctrl+C to stop" -ForegroundColor Gray
 Write-Host ""

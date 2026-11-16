@@ -1,6 +1,6 @@
-# NetGuard
+# blknet
 
-**NetGuard** adalah aplikasi web *network device blocker*: memindai perangkat yang terhubung ke jaringan lokal (WiFi/LAN), lalu memblokir perangkat tertentu menggunakan **ARP spoofing** — semuanya melalui GUI web berbasis **Flask**.
+**blknet** adalah aplikasi web *network device blocker*: memindai perangkat yang terhubung ke jaringan lokal (WiFi/LAN), lalu memblokir perangkat tertentu menggunakan **ARP spoofing** — semuanya melalui GUI web berbasis **Flask**.
 
 > ⚠️ **Etika penggunaan:** ini adalah alat manipulasi jaringan (ARP spoofing). Gunakan **hanya pada jaringan milik sendiri** atau untuk penggunaan edukatif yang sah. Menggunakan alat ini pada jaringan tanpa izin adalah tindakan ilegal.
 
@@ -25,7 +25,7 @@ Blokir **tidak persisten**: hanya aktif selama server berjalan.
 ## Struktur Project
 
 ```
-netguard/
+blknet/
 ├── app.py                    # Varian Linux: nmap + arpspoof
 ├── templates/index.html      # GUI web
 ├── windows/
