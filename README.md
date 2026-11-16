@@ -75,4 +75,6 @@ Semua endpoint mengembalikan JSON.
 
 ## Lisensi
 
-Belum ada lisensi yang ditentukan.
+Project ini dilisensikan di bawah **[GPL-2.0-or-later](LICENSE)** (SPDX: `GPL-2.0-or-later`).
+
+Lisensi GPL dipilih karena varian Windows mengimpor [Scapy](https://scapy.net/) yang berlisensi **GPL v2** — dengan lisensi yang kompatibel dengan GPL, distribusi project ini tetap sah.

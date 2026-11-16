@@ -9,6 +9,7 @@ venv/
 .codely-cli/
 logs/
 cod.json
+CODELY.md
 
 # OS / editor
 .DS_Store
