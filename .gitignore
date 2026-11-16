@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+
+# Codely CLI internals (bukan bagian dari aplikasi)
+.codely-cli/
+logs/
+cod.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
